@@ -3,7 +3,7 @@
  */
 
 // 额外分数：修改数字
-let extraScore = 3000;
+let extraScore = 1000;
 
 // 无敌模式：true 改为 false
 let wuDi = true;
@@ -12,8 +12,8 @@ let wuDi = true;
 let firstFruit = 2;
 
 // 指定生成的水果
-const minRandomFruitNum = 9; // 生成随机水果最小值（0-10）
-const maxRandomFruitNum = 9; // 生成随机水果最大值（1-11）
+const minRandomFruitNum = 0; // 生成随机水果最小值（0-10）
+const maxRandomFruitNum = 11; // 生成随机水果最大值（1-11）
 let setFruits = {
   startFruits: [1,0,1,3,6,9], // 指定前几次生成的水果，可填入任意数量的数字
   randomFunction: () => {
@@ -34,7 +34,7 @@ let adLink = 'http://resume.anshare.cn';
 document.getElementsByTagName("title")[0].innerText = '合成大西瓜';
 
 // 开启选分弹窗：将 false 改为 true
-let selectModal = false;
+let selectModal = true;
 
 // 水果合成反转：false 改为 true（尚未支持）
 let reverseLevelUp = false;
